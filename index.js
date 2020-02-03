@@ -1,8 +1,9 @@
 const myString = "Hello";
 
-let Hello = "Goodbye";
+let hello = "Goodbye";
+let goodbye = "Hello";
 
 const myNum = "30";
 
-var hello = "true";
-var Goodbye = "false";
+hello = true;
+goodbye = false;
