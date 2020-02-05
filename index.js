@@ -1,9 +1,25 @@
-const myString = "Hello";
+// Underfinded is a PRIMITIVE TYPE.
+// It signifies the absence of ANY value.
+let x;
 
-let hello = "Goodbye";
-let goodbye = "Hello";
+x = 23;
+x = 0;
+// NULL is a PRIMITIVE.
+// NULL represents a deliberate assignment of 'nothing'
+console.log(x);
 
-const myNum = "30";
+// This is an OBJECT.
+const me = {
+  name: "Katy",
+  age: 36,
+  pets: {
+    cat: "Demon",
+    dog: "Ellie"
+  }
+};
 
-hello = true;
-goodbye = false;
+// Create an new key value pair with age = 23.
+me.age = 23;
+me.name = "Keller";
+
+console.log(me.pets.cat);
