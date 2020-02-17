@@ -1,11 +1,17 @@
-const x = 3;
+const a = 49;
+const b = 49;
 
-// TODO: Check if x is ODD AND if it's less than 10
-if (x % 2 === 1 && x < 10) {
-  console.log("x is odd if it has a remainder of 1.");
-}
+console.log(a === b);
 
-// TODO: Check if x is ODD OR if it's less than 10
-if (x % 2 === 1 || x < 10) {
-  console.log("x is odd if it has a remainder of 1.");
-}
+const x = {
+  name: "Katy"
+};
+
+const y = {
+  name: "Katy"
+};
+
+// false b/c OBJECTS are COMPARED BY REFERENCE
+console.log(x === y);
+
+console.log({ a: 42 } === { a: 42 });
