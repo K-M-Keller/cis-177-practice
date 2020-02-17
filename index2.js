@@ -1,21 +1,8 @@
-// Pass by VALUE
-let x = 3;
+// TODO: Log the numbers from 1 to 20
+let x = 1;
 
-x = 4;
-
-let y = x;
-
-console.log(y);
-
-// Pass by REFERENCE
-const a = {
-  name: "katy"
-};
-
-// b will point to the same memory address
-// What happens to 1 will affect the other
-const b = a;
-
-a.name = "keller";
-
-console.log(b.name);
+while (x <= 10) {
+  console.log(x);
+  // Alway make sure there is and exit condition.
+  x += 1; // x = x + 1;
+}
