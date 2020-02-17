@@ -1,17 +1,21 @@
-const a = 49;
-const b = 49;
+// Pass by VALUE
+let x = 3;
 
-console.log(a === b);
+x = 4;
 
-const x = {
-  name: "Katy"
+let y = x;
+
+console.log(y);
+
+// Pass by REFERENCE
+const a = {
+  name: "katy"
 };
 
-const y = {
-  name: "Katy"
-};
+// b will point to the same memory address
+// What happens to 1 will affect the other
+const b = a;
 
-// false b/c OBJECTS are COMPARED BY REFERENCE
-console.log(x === y);
+a.name = "keller";
 
-console.log({ a: 42 } === { a: 42 });
+console.log(b.name);
