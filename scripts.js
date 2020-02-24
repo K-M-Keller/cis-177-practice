@@ -1,20 +1,16 @@
-// TODO: FIzz Buzz
-// Log the numbers from 1 to 100.
-// However if the number is divisible by 3, log fizz.
-// However if the number is divisible by 5, log buzz.
-// However if the number is divisible by both, log fizz buzz.
+// Log the numbers from 1 to 10.
+// in parentheses, specify 3 things - start - stop - increment
+//  'for' limits the use of GLOBAL VARIBLE for 'i'
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
 
-let i = 1;
+// Add the numbers from 1 to 10.
+let total = 0;
 
-while (i <= 100) {
-  if (!(i % 3) && !(i % 5)) {
-    console.log("FizzBuzz");
-  } else if (!(i % 3)) {
-    console.log("Fizz!");
-  } else if (!(i % 5)) {
-    console.log("Buzz!");
-  } else {
-    console.log(i);
-  }
-  i += 1;
+for (let i = 1; i <= 10; i++) {
+  console.log("total is", total);
+  console.log("i is", i);
+
+  total += i;
 }
